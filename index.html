@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Template Creator</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Website Template Creator</h1>
+    <table id="tblData">
+      <tr>
+        <td>Company Name:</td>
+        <td id="changeCompanyName"></td>
+      </tr>
+      <tr>
+        <td>Phone Number:</td>
+        <td id="changePhoneNumbers"></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td id="changeAddress"></td>
+      </tr>
+      <tr>
+        <td>Key Services:</td>
+        <td id="changeKeyServices"></td>
+      </tr>
+      <tr>
+        <td>Objectives:</td>
+        <td id="changeObjectives"></td>
+      </tr>
+      <tr>
+        <td>Main Color:</td>
+        <td id="changeMainColor"></td>
+      </tr>
+      <tr>
+        <td>Audience:</td>
+        <td id="changeAudience"></td>
+      </tr>
+      <tr>
+        <td>Major Achievement:</td>
+        <td id="changeMajorAchivement"></td>
+      </tr>
+      <tr>
+        <td>Employees:</td>
+        <td id="changeEmployees"></td>
+      </tr>
+    </table>
+    <br>
+    <div class="wrapper">
+      <button onclick="exportTableToExcel('tblData')">Export Data to Excel</button>
+      <input type="button" value="New Template" onclick="window.location.reload()">
+    </div>
+
+    <script type="text/javascript" src="websiteCreator.js"></script>
+    <script type="text/javascript" src="exportToExcel.js"></script>
+  </body>
+</html>
